@@ -1,0 +1,81 @@
+
+
+@media (max-width:991px) {
+    .gloab-icon{
+        object-fit: cover;
+        position: relative;
+        left:-10rem;
+    }
+    .unleashing-the-power-container{
+        font-size: 50px;
+    }
+    .header-text-para{
+        /* max-width: 0; */
+        display: flex;
+    }
+    .welcome-to-boolean-ai-parent {
+        margin-top: 125px;
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+@media (max-width:767px) {
+    .gloab-icon{
+        object-fit: cover;
+        position: relative;
+        left:-15rem;
+    }
+}
+@media (max-width:576px) {
+    .gloab-icon{
+        object-fit: cover;
+        position: relative;
+        left:-5rem;
+    }
+    .unleashing-the-power-container{
+        font-size: 50px;
+    }
+    .header-text-para{
+        display: flex;
+        width: 300px;
+    }
+    .welcome-to-boolean-ai-parent {
+        margin-top: 100px;
+    }
+}
+
+
+
+@media (min-width:00px) and (max-width:576px) {
+    .gloab-icon{
+        object-fit: cover;
+        position: relative;
+        left: -10rem;
+    }
+    .unleashing-the-power-container{
+        font-size: 40px;
+    }
+    .header-text-para{
+        width: 400px;
+    }
+    .head-sd{
+        display: flex;
+        justify-content:start;
+    }
+    .welcome-to-boolean-ai-parent{
+        margin-top: 70px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 5rem;
+    }
+    
+    .ab-row{
+        display: flex;
+        flex-direction: column;
+    }
+    /* .about-left-md{
+
+    } */
+}
