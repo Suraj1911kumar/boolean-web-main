@@ -10,83 +10,138 @@
 } */
 
 @media (max-width:991px) {
-    .gloab-icon{
+    .gloab-icon {
         object-fit: cover;
         position: relative;
-        left:-10rem;
+        left: -10rem;
     }
-    .unleashing-the-power-container{
+
+    .unleashing-the-power-container {
         font-size: 50px;
     }
-    .header-text-para{
+
+    .header-text-para {
         /* max-width: 0; */
         display: flex;
     }
+
     .welcome-to-boolean-ai-parent {
         margin-top: 125px;
         display: flex;
         justify-content: center;
     }
-    .head-all h1{
+
+    .head-all h1 {
         display: inline;
+    }
+    .head-content,
+    .boolean-insights{
+        color: #000;;
     }
 
 }
+
 @media (max-width:767px) {
-    .gloab-icon{
+    .gloab-icon {
         object-fit: cover;
         position: relative;
-        left:-15rem;
+        left: -15rem;
     }
+    .about-us {
+        position: relative;
+        width: 100%;
+        height: 493px;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 0px 37px;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        text-align: left;
+        font-size: 21px;
+        color: #fff;
+        font-family: Poppins;
+    }
+   
 }
+
+
 @media (max-width:576px) {
-    .gloab-icon{
+    .gloab-icon {
         object-fit: cover;
         position: relative;
-        left:-5rem;
+        left: -5rem;
     }
-    .unleashing-the-power-container{
+
+    .unleashing-the-power-container {
         font-size: 50px;
     }
-    .header-text-para{
+
+    .header-text-para {
         display: flex;
         width: 300px;
     }
+
     .welcome-to-boolean-ai-parent {
         margin-top: 100px;
+    }
+    .about-us {
+        position: relative;
+        width: 100%;
+        height: 493px;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 0px 37px;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        text-align: left;
+        font-size: 21px;
+        color: #fff;
+        font-family: Poppins;
     }
 }
 
 
 
 @media (min-width:00px) and (max-width:576px) {
-    .gloab-icon{
+    .gloab-icon {
         object-fit: cover;
         position: relative;
         left: -10rem;
     }
-    .unleashing-the-power-container{
+
+    .unleashing-the-power-container {
         font-size: 40px;
     }
-    .header-text-para{
+
+    .header-text-para {
         width: 400px;
     }
-    .head-sd{
+
+    .head-sd {
         display: flex;
-        justify-content:start;
+        justify-content: start;
     }
-    .welcome-to-boolean-ai-parent{
+
+    .welcome-to-boolean-ai-parent {
         margin-top: 70px;
         display: flex;
         justify-content: center;
         position: relative;
         left: 5rem;
     }
-    
-    .ab-row{
+
+    .ab-row {
         display: flex;
         flex-direction: column;
     }
+    .navbar-ul li a{
+        font-size: 40px!important;
+    }
+
     /* .about-left-md{
 
     } */
