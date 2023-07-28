@@ -1,122 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-color: black;
-            color: white;
-        }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
 
-        .parent-content {
-            min-width: 100%;
-            width: 800px;
-            height: auto;
-            min-height: 500px;
-            max-width: 500px;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            gap: 26px;
-            align-items: start;
-            justify-content: start;
-            border: 2px solid white;
-        }
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
 
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
 
+.sidebar a:hover {
+  color: #f1f1f1;
+}
 
-        .head-content {
-            font-size: 21px;
-            letter-spacing: 0.14rem;
-            text-transform: uppercase;
-            font-weight: 500;
-            color: #6d95fc;
-            text-align: left;
-            display: inline-block;
-            max-width: 136px;
-            max-height: 35px;
-        }
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
 
-        .header-content {
-            margin-block-start: 0;
-            margin-block-end: 23px;
-            font-size: 48px;
-            letter-spacing: 0.04em;
-            line-height: 116.5%;
-            display: inline-block;
-            max-width: 708px;
-        }
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
 
-        .line-content {
-            border: 3px solid #6d95fc;
-            width: 100px;
-            margin-top: auto;
-            max-height: 3px;
-        }
+.openbtn:hover {
+  background-color: #444;
+}
 
-        .small-text-content {
-            font-size: 17px;
-            letter-spacing: 0.01em;
-            text-transform: capitalize;
-            color: #6d95fc;
-            text-align: center;
-        }
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
 
-        .para-content {
-            margin-block-start: 0;
-            margin-block-end: 23px;
-            font-size: 21px;
-            letter-spacing: 0.04em;
-            line-height: 116.5%;
-            display: inline-block;
-            max-width: 708px;
-        }
-
-        .button-content-parent {
-            position: relative;
-            border-radius: 2px;
-            border: 3px solid #6d95fc;
-            box-sizing: border-box;
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            padding: 10px 25px;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            font-size: 17px;
-            color: #fff;
-            font-family: Poppins;
-        }
-    </style>
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
 </head>
-
 <body>
-    <div class="parent-content">
-        <div class="head-content">About US</div>
-        <div class="header-content">
-            <b> We <span style="color: #6d95fc;">Develope</span> simple solution for complex problems.</b>
-        </div>
-        <div class="line-content"></div>
-        <div class="small-text-content">
-            We love creating
-        </div>
-        <div class="para-content">
-            Lorem ipsumNeque porro quisquam est qui do lorem ipsum quia dolor sit amet, Neque porro elit NeDque porro
-            Lorem ipsum Neque porro Neque porro
-            Neque porro quisquam est qui do lorem ipsum quia dolor sit amet, Lorem ipsum Neque quis ipsum
-        </div>
-        <div class="button-content-parent">
-            <div class="button-content">Read More</div>
-        </div>
-    </div>
-</body>
 
-</html>
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
+  <h2>Collapsed Sidebar</h2>
+  <p>Click on the hamburger menu/bar icon to open the sidebar, and push this content to the right.</p>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+   
+</body>
+</html> 
