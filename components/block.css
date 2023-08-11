@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.block {
+    height: 100%;
+    width: 100%;
+    max-width: 630px;
+    max-height: 630px;
+    border: 1px solid red;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.image {
+    transition: 2s ease-in;
+}
+
+.blocks {
+    height: 100%;
+    width: 100%;
+    max-width: 630px;
+    height: 630px;
+    border: 1px solid red;
+    position: relative;
+    transition: all 0.8s ease-out;
+}
+
+
+
+.blocks :nth-child(1) {
+    position: absolute;
+    /* height: 85.42%;
+    width: 53.61%; */
+    top: 0%;
+    right: 0%;
+    bottom: 14.58%;
+    left: 46.39%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.blocks :nth-child(2) {
+    top: 0%;
+    right: 0%;
+    bottom: 14.74%;
+    left: 16.74%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+}
+
