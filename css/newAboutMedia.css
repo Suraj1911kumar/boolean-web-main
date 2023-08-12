@@ -1,44 +1,53 @@
 @media (max-width:1440px) {
     .background {
         height: auto;
-    width: 100%;
-    background-image: url("../images/src/aboutImg/background.svg");
-    /* background-size: 100% 80%; */
-    background-repeat: no-repeat;
-    overflow: visible;
-    /* object-fit: contain; */
+        width: 100%;
+        background-image: url("../images/src/aboutImg/background.svg");
+        /* background-size: 100% 80%; */
+        background-repeat: no-repeat;
+        overflow: visible;
+        /* object-fit: contain; */
     }
+
     .min-head-hero {
         font-size: 40px;
         /* margin:50px 0px 50px 0px; */
     }
 }
+
 @media (max-width:1024px) {
-   .navbar-ul{
-    gap: 30px;
-   }
-}@media (max-width:991px) {
-    .mb-d{
+    .navbar-ul {
+        gap: 30px;
+    }
+}
+
+@media (max-width:991px) {
+    .mb-d {
         display: block;
     }
-    .mb-hide{
+
+    .mb-hide {
         display: none;
     }
-    .upper .block-section{
+
+    .upper .block-section {
         display: none;
     }
-    .active{
+
+    .active {
         border-bottom: none !important;
     }
+
     .nav-link:hover a {
         border-bottom: none !important;
     }
+
     .background {
         background-image: url('../images/src/aboutImg/media.svg');
         /* border: 1px solid red; */
         background-repeat: repeat-x;
         background-size: 100% 100%;
-        background-position:top center;
+        background-position: top center;
         object-fit: cover;
     }
 
@@ -54,23 +63,27 @@
 
     .min-head-hero {
         font-size: 40px;
-        margin:50px 0px 20px 0px;
+        margin: 50px 0px 20px 0px;
     }
 
     .line {
         margin: 26px 0 26px 0;
     }
 
-    .content-about p{
+    .content-about p {
         font-size: 40px;
-    }.content-about span{
+    }
+
+    .content-about span {
         font-size: 25px;
     }
-    .blank_space{
+
+    .blank_space {
         display: none;
     }
 }
-@media(max-width:767px){
+
+@media(max-width:767px) {
     .background {
         background-image: url('../images/src/aboutImg/a1.svg');
         /* border: 1px solid red; */
@@ -79,49 +92,113 @@
         background-position: center top;
         object-fit: cover;
     }
-    .head-hero{
+
+    .head-hero {
         font-size: 50px;
     }
-    .min-head-hero{
+
+    .min-head-hero {
         font-size: 30px;
-        margin:30px 0px 15px 0px;
+        margin: 30px 0px 15px 0px;
     }
-    .min-head-para{
+
+    .min-head-para {
         font-size: 25px;
     }
-    .line{
+
+    .line {
         margin: 0px 0px 20px 0px;
     }
-    .content-about p{
+
+    .content-about p {
         font-size: 35px;
-    }.content-about span{
+    }
+
+    .content-about span {
         font-size: 20px;
     }
-    .our-mission-content b{
+
+    .our-mission-content b {
         font-size: 35px;
 
     }
-    .our-mission-content span{
+
+    .our-mission-content span {
         font-size: 20px;
     }
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width:526px) {
-    .logo-img {
-        width: 300px !important;
+    .logo_img {
+        min-width: 300px !important;
     }
-    
+
+}
+
+
+
+@media (max-width:425px) {
+    .logo_img {
+        width: 100%;
+        min-width: 100px !important;
+    }
+    .about-us-head{
+        font-size: 10px;
+    }
+    .about-us-head img{
+        height: 10px;
+        width: 10px;
+    }
+    .head-hero {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .min-head-hero {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .min-head-para{
+        font-size: 15px;
+    }
+    .head-para{
+        font-size: 12px;
+    }
+    .button{
+        width: 120px;
+        font-size: 14px;
+        padding: 5px;
+    }
+    .discover {
+        gap: 20px;
+    }
+    .discover b{
+        font-size: 20px;
+    }
+    #mouse {
+        margin-top: 20px;
+    }
+    .content-about{
+        margin-top: 50px !important;
+    } 
+    .content-about p{
+        font-size: 20px;
+    }
+    .content-about span{
+        font-size: 15px;
+    }
+    .mb-d{
+        font-size: 30px !important;
+    }
+    .our-mission-content span{
+        font-size: 16px;
+    }
+    .mission{
+        margin-bottom: 10rem;
+    }
+    .footer-second{
+        margin-top: 5rem !important;
+        overflow-x: hidden;
+    }
 }

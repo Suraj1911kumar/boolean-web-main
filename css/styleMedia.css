@@ -22,13 +22,26 @@
         display: none;
     }
 }
-
+@media(min-width:1920px) {
+    .hero{
+        height: 100vh;
+        width: 100vw;
+        background: url("../images/src/fullBackground.svg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
 @media only screen and (max-width:1920px) {
     .hero {
         max-width: 100%;
         height: 100%;
-        background-image: url('../images/herowave.png');
-        background-size: 100% 100%;
+        background-image: url('../images/src/backwave.svg');
+        background-size: cover;
         background-repeat: no-repeat;
         background-color: black;
         /* background-position: center; */
@@ -41,16 +54,21 @@
 
 @media (max-width:991px) {
     .gloab-icon {
-        object-fit: cover;
+        /* object-fit: cover; */
         position: relative;
         left: -15rem;
+        max-width: 34.125rem;
+
     }
-    .active{
+
+    .active {
         border-bottom: none !important;
     }
+
     .nav-link:hover a {
         border-bottom: none !important;
     }
+
     .unleashing-the-power-container {
         font-size: 50px;
     }
@@ -85,9 +103,12 @@
 
 @media (max-width:767px) {
     .gloab-icon {
-        object-fit: cover;
+        height: 500px;
+        width: 300px;
         position: relative;
         left: -20rem;
+        /* max-width: 34.125rem; */
+
     }
 
     .about-us {
@@ -108,93 +129,78 @@
     }
 
 }
-
 
 @media (max-width:576px) {
     .gloab-icon {
-        object-fit: cover;
-        position: relative;
-        left: -5rem;
-    }
+        display: none;
 
-    .unleashing-the-power-container {
-        font-size: 50px;
-    }
-
-    .header-text-para {
-        display: flex;
-        width: 300px;
     }
 
     .welcome-to-boolean-ai-parent {
-        margin-top: 100px;
+        margin-top: 50px;
+        margin-inline: 50px;
+        background: url("../images/src/gloab.png");
+        background-size: 70vw auto;
+        background-repeat: no-repeat;
+        background-position: center center;
     }
 
-    .about-us {
-        position: relative;
+    .welcome-to-boolean {
+        font-size: 14px;
+    }
+
+    .unleashing-the-power-container {
+        font-size: 30px;
+    }
+
+    .header-text-para {
         width: 100%;
-        height: 493px;
-        display: flex;
-        flex-direction: column;
-        padding: 0px 0px 37px;
-        box-sizing: border-box;
-        align-items: center;
-        justify-content: center;
-        gap: 32px;
-        text-align: left;
-        font-size: 21px;
-        color: #fff;
-        font-family: Poppins;
+        font-size: 16px;
+        /* max-width: 400px; */
+    }
+
+    .get-in-touch-wrapper {
+        width: 120px;
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .header-content {
+        font-size: 40px;
+    }
+
+    .para-content {
+        font-size: 18px;
+    }
+
+    .leverage-the-power-container {
+        font-size: 40px;
+    }
+
+    .lorem-ipsumneque-porro {
+        font-size: 18px;
     }
 
 }
 
-
-
-@media (min-width:00px) and (max-width:576px) {
-    .gloab-icon {
-        object-fit: cover;
-        position: relative;
-        left: -10rem;
+@media (max-width:425px) {
+    .para-testi {
+        font-size: 14px;
+    }
+    .detail-testi{
+        gap: 10apx;
+    }
+    .face-img {
+        width: 20vw;
+        height: 20vh;
     }
 
-    .unleashing-the-power-container {
-        font-size: 40px;
+    .name-testi {
+        font-size: 3vw;
     }
 
-    .header-text-para {
-        width: 400px;
+    .comma-img {
+        width: 30px;
+        height: 30px;
     }
-
-    .head-sd {
-        display: flex;
-        justify-content: start;
-    }
-
-    .welcome-to-boolean-ai-parent {
-        margin-top: 70px;
-        display: flex;
-        justify-content: center;
-        position: relative;
-        left: 5rem;
-    }
-
-    .ab-row {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .navbar-ul li a {
-        font-size: 40px !important;
-    }
-
-    .footer {
-        background-size: 100% 50% !important;
-        /* background-position: center; */
-        /* object-fit: contain; */
-    }
-
-    /* .about-left-md{
-
-    } */
 }

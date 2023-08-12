@@ -1,10 +1,10 @@
 @media (max-width:1024px) {
-    .our-products-we-container{
+    .our-products-we-container {
         font-size: 28px;
     }
-    
 
-/* .head {
+
+    /* .head {
     width: 100%;
     height: auto;
     background: url("../images/src/aboutImg/background.svg");
@@ -13,23 +13,27 @@
     background-position: center;
     z-index: -1;
 } */
-   
+
 }
 
 @media (max-width:991px) {
     .our-products-we-container {
         font-size: 24px;
     }
-    .head-all{
+
+    .head-all {
         display: block;
         margin-block: 2rem;
     }
-    .low-codeno-code{
+
+    .low-codeno-code {
         display: none;
     }
-    .active{
+
+    .active {
         border-bottom: none !important;
     }
+
     .nav-link:hover a {
         border-bottom: none !important;
     }
@@ -39,5 +43,32 @@
 @media (max-width:767px) {
     .our-products-we-container {
         font-size: 20px;
+    }
+
+    .software-programs-known {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:526px) {
+    .our-products {
+        font-size: 35px;
+    }
+
+    .our-products-we-container {
+        font-size: 20px;
+        margin-inline: 10px !important;
+
+    }
+
+    .we-offer-custom {
+        font-size: 16px;
+    }
+
+    .head-all {
+        font-size: 35px !important;
+    }
+    .logo_img{
+        min-width: 100px !important;
     }
 }

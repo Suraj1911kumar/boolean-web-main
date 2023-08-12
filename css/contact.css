@@ -26,8 +26,9 @@ a {
     color: white !important;
 }
 
-.active,
-.nav-link:hover {
+.active span,
+.nav-link:hover span { 
+    padding-bottom: 10px;
     border-bottom: 1px solid #6d95fc !important;
 }
 

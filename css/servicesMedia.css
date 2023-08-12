@@ -44,7 +44,7 @@
     }
 
     .head {
-        width: 100%;
+        width: 100%; 
         height: auto;
         background: url("../images/src/aboutImg/background.svg");
         background-size: 100% 100%;
@@ -68,4 +68,29 @@
         font-size: 16px;
     }
 
+}
+@media (max-width:425px) {
+    .we-offer-custom{
+        display: none;
+    }
+    .we-offer-custom-m{
+        display: block;
+    }
+    .contain{
+        display: block;
+    }
+    .our-services{
+        font-size: 25px;
+    }
+    .service-head{
+        font-size: 14px;
+    }
+    .service-head img{
+        height: 15px;
+        width: 15px;
+    }
+    .logo_img{
+        width: 100%;
+        min-width: 100px !important;
+    }
 }

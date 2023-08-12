@@ -181,7 +181,7 @@ body {
     width: 100%;
     background-image: url("../images/about-img/footer-wave.png");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% 100%; 
     background-position: center;
     object-fit: contain;
     z-index: -1;

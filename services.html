@@ -18,22 +18,18 @@
 </head>
 
 <body style="background-color: black;">
-    <button
-        type="button"
-        class="btn btn-danger btn-floating btn-lg"
-        id="btn-back-to-top"
-        >
-  <i class="fas fa-arrow-up"></i>
-</button>
+    <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
-<div id="center">
-    <div class="wave"></div>
-    <div class="wave"></div>
-    <div class="wave"></div>
-    <div class="wave"></div>
-    <div class="wave"></div>
-    <div class="wave"></div>
-</div>
+    <div id="center">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
     <div class="services">
         <div class="head">
 
@@ -41,7 +37,7 @@
                 <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark  mask-custom " data>
                     <div class="container">
                         <a class="navbar-brand col-4 col-lg-3 col-md-6 col-sm-10" href="./index.html">
-                            <img src="./images/logo2.png" alt="logo here" width="250" height="32"
+                            <img src="./images/src/logo.png" alt="logo here" width="250" height="32"
                                 class="img-fluid logo_img">
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -67,13 +63,13 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="./contact.html">Contact Us</a>
                                 </li>
-                                <li class="nav-item">
+                                <!-- <li class="nav-item">
                                     <a class="nav-link nb" href="#">
 
                                         <i class="fa-solid fa-magnifying-glass" style="color: #6d95fc;"></i>
 
                                     </a>
-                                </li>
+                                </li> -->
                             </ul>
                         </div>
                     </div>
@@ -82,13 +78,42 @@
             <div class="main-container my-5">
                 <div class="service-content">
                     <div class="service-head">Our Services
-                         <img src="./images/about-img/about-arrow.png" alt="arrow here" class="img-fluid">
+                        <img src="./images/about-img/about-arrow.png" alt="arrow here" class="img-fluid">
                     </div>
                     <div class="our-services-boolean-container my-5">
                         <p class="our-services"><b>Our Services</b></p>
                         <p class="boolean-artificial-intelligenc">Boolean Artificial Intelligence offers a host of
                             technical services to our clients, our services cover a vast range of spectrum, specially
                             tailored for our clients.</p>
+                        <div class="contain">
+                            <p class="d-inline-flex gap-1 read-container">
+                                <a class="btn" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample" href="#feature"
+                                    id="mouse-hover">
+
+                                    <div id="mouse">
+                                        <div class="btn btn-outline-primary">Read More</div>
+                                    </div>
+
+                                </a>
+
+                            </p>
+                            <div class="collapse" id="collapseExample">
+                                <div class="card card-body bg">
+                                    <p class="we-offer-custom-m">We offer Custom Software Development, Generative AI
+                                        Suites, iOS and
+                                        Android Mobile Applications, Website Development, Digital Transformation,
+                                        Business Analytics
+                                        Tools and Suites, Cloud Management, Design Solutions, Product and Process
+                                        Engineering, and
+                                        Quality Control, and I.T. Consultancy. Choose from an extensive range of
+                                        services and
+                                        optimize your business, reach out to a wider group of audience, and manage all
+                                        your business
+                                        I.T. needs in a single place. Let our team do the I.T. magic for you.</p>
+                                </div>
+                            </div>
+                        </div>
                         <p class="we-offer-custom">We offer Custom Software Development, Generative AI Suites, iOS and
                             Android Mobile Applications, Website Development, Digital Transformation, Business Analytics
                             Tools and Suites, Cloud Management, Design Solutions, Product and Process Engineering, and
@@ -96,7 +121,6 @@
                             optimize your business, reach out to a wider group of audience, and manage all your business
                             I.T. needs in a single place. Let our team do the I.T. magic for you.</p>
                     </div>
-
                 </div>
             </div>
             <div class="container box-container">
@@ -187,41 +211,41 @@
         crossorigin="anonymous"></script>
 
 
-        <script>
-            let loader = document.getElementById("center");
-            window.addEventListener("load", function () {
-                loader.style.display = "none";
-            })
-        </script>
+    <script>
+        let loader = document.getElementById("center");
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        })
+    </script>
 
 
 
-<script>
-    let mybutton = document.getElementById("btn-back-to-top");
+    <script>
+        let mybutton = document.getElementById("btn-back-to-top");
 
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function () {
-        scrollFunction();
-    };
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction();
+        };
 
-    function scrollFunction() {
-        if (
-            document.body.scrollTop > 20 ||
-            document.documentElement.scrollTop > 20
-        ) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
+        function scrollFunction() {
+            if (
+                document.body.scrollTop > 20 ||
+                document.documentElement.scrollTop > 20
+            ) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
         }
-    }
-    // When the user clicks on the button, scroll to the top of the document
-    mybutton.addEventListener("click", backToTop);
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.addEventListener("click", backToTop);
 
-    function backToTop() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
-</script>
+        function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 </body>
 
 </html>

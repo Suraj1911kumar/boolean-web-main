@@ -91,7 +91,7 @@ body {
 }
 
 
-.our-services {
+.our-services { 
     margin-block-end: 46px;
     font-size: 48px;
 }
@@ -147,8 +147,12 @@ body {
 }
 
 
-
-
+.card-body{
+    background-color: black !important;
+}
+.contain{
+    display: none;
+}
 
 /* -----------------footer------------- */
 
