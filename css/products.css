@@ -14,6 +14,15 @@ body {
     font-family: 'Poppins', sans-serif !important;
 }
 
+body::-webkit-scrollbar {
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #6d95fc;
+    border-radius: 28px;
+}
+
 .main-container {
     max-width: 1528px;
     margin-inline: auto;
@@ -45,12 +54,14 @@ body {
     gap: 40px;
     color: white !important;
 }
-.active,
-.nav-link:hover{
+
+.active span,
+.nav-link:hover span {
+    padding-bottom: 10px;
     border-bottom: 1px solid #6d95fc !important;
 }
 
-.nb:hover{
+.nb:hover {
     border: none !important;
 }
 
@@ -65,7 +76,7 @@ body {
     z-index: -1;
 }
 
-.product-head{
+.product-head {
     /* font-size: 21px; */
     color: #6d95fc;
     text-align: left;
@@ -74,7 +85,7 @@ body {
     text-transform: uppercase;
     font-weight: 500;
     /* list-style: ; */
-} 
+}
 
 .products-head {
     position: relative;
@@ -98,7 +109,7 @@ body {
     /* font-weight: 500; */
     font-family: Poppins;
     color: #fff;
-    text-align: center;
+    text-align: left;
     display: inline-block;
     max-width: 1500px;
     height: auto;
@@ -106,6 +117,7 @@ body {
 }
 
 .our-products {
+    text-align: center;
     margin-block-start: 0px;
     margin-block-end: 46px;
     font-size: 48px;
@@ -181,7 +193,7 @@ body {
     width: 100%;
     background-image: url("../images/about-img/footer-wave.png");
     background-repeat: no-repeat;
-    background-size: 100% 100%; 
+    background-size: 100% 100%;
     background-position: center;
     object-fit: contain;
     z-index: -1;
@@ -256,9 +268,17 @@ body {
     color: #6d95fc;
     cursor: pointer;
 }
-.list-inline-item:hover i{
+
+.list-inline-item a {
+    text-decoration: none !important;
+    color: #6d95fc !important;
+    text-transform: uppercase;
+}
+
+.list-inline-item:hover i {
     transform: scale(1.2);
 }
+
 .footerlist li {
     font-size: 1.313rem;
     font-weight: 500;
@@ -280,13 +300,20 @@ body {
     right: 20px;
     display: none;
     border: 3px solid #000;
-    outline:  3px solid #6d95fc;
+    outline: 3px solid #6d95fc;
     background-color: #6d95fc;
     border-radius: 50%;
     color: black;
     z-index: 100;
-  }
+}
 
+#btn-back-to-top i {
+    transform: scale(1.2);
+}
+
+#btn-back-to-top:hover i {
+    transform: scale(1.5);
+}
 
 /* for just check don not remove it */
 /* 

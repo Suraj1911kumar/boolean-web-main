@@ -9,15 +9,22 @@
 body {
     color: white !important;
     font-family: 'Poppins', sans-serif;
-    min-width: 400px;
+    /* min-width: 400px; */
     overflow-x: hidden;
 }
-
+body::-webkit-scrollbar{
+    background-color: transparent;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #6d95fc;
+    border-radius: 28px;
+}
 
 a {
-    color: #fff;
-    text-decoration: none;
+    color: #fff !important;
+    text-decoration: none !important;
 }
+
 
 .navbar-ul {
     /* border: 1px solid gold; */
@@ -38,11 +45,12 @@ a {
 
 .main-container {
     max-width: 1528px;
+    height: auto !important;
     /* width: 100%; */
     margin-inline: auto;
     padding-inline: 1%;
     /* border: 1px solid green; */
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 /* input{
@@ -87,14 +95,16 @@ a {
 
 .footer-first {
     width: 100%;
+    height: auto !important;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow-y: visible;
 }
 
 .footer-left {
     width: 50%;
-    height: 600px;
+    /* min-height: 600px; */
     justify-content: center;
     align-items: center;
 }
@@ -164,8 +174,8 @@ a {
 
 .footer-right {
     width: 50%;
-    background: linear-gradient(223.47deg, rgba(109, 149, 252, 0.24) 3.19%, rgba(21, 21, 21, 0) 61.55%);
-    height: 600px;
+    background: transparent;
+    /* min-height: 600px; */
     /* background-color: black; */
     /* border:1px solid violet; */
 }
@@ -180,25 +190,35 @@ a {
     position: relative;
     top: 50px;
     border-radius: 30px;
-    background: linear-gradient(223.47deg, rgba(109, 149, 252, 0.24) 3.19%, rgba(21, 21, 21, 0) 61.55%);
-
+    background: linear-gradient(223.47deg, rgba(109, 149, 252, 0.24) 3.19%, rgba(21, 21, 21, 0) 100%) black;
+    opacity: 1;
 }
 
 .footer-contain-contact form {
     padding: 47px 56px 0px 56px;
 }
 
+
+form{
+    height: auto;
+    width: 100%;
+}
 form input {
     height: 47px;
     width: 26.625rem;
     border: 2px solid white;
+    color: white !important;
     background-color: transparent !important;
 }
 
+form small{
+    color: red;
+}
 form textarea {
     height: 168px;
     width: 26.625rem;
     border: 2px solid white;
+    color: white !important;
     background-color: transparent !important;
 
 }
@@ -209,15 +229,20 @@ form textarea {
 
 form button {
     display: flex;
-    width: 188px;
+    width: 188px !important;
     height: 43.647px;
     padding: 10px 25px;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    border: 3px solid #000;
+    outline: 3px solid #6d95fc;
+    background-color: #6d95fc;
     flex-shrink: 0;
     color: black;
-    background-color: #6D95FC;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
     margin: auto;
 }
 
@@ -337,6 +362,7 @@ form button {
 
     .footer-first {
         display: block;
+        height: auto;
     }
 
     .footer-left {
@@ -471,9 +497,14 @@ form button {
     margin: auto;
 }
 
-.list-inline-item {
-    color: #6d95fc;
+.list-inline-item i{
+    color: #6d95fc !important;
     cursor: pointer;
+}
+.list-inline-item a{
+    text-decoration: none !important;
+    color: #6d95fc !important;
+    text-transform: uppercase;
 }
 
 .list-inline-item:hover i {
@@ -514,4 +545,41 @@ form button {
     border-radius: 50%;
     color: black;
     z-index: 100;
+}
+#btn-back-to-top i{
+    transform: scale(1.2);
+}
+#btn-back-to-top:hover i{
+    transform: scale(1.5);
+}
+
+
+.swal2-modal{
+    background-color: black;
+    /* gap: 10px; */
+    color: white;
+    box-shadow: 5px 5px 5px 5px black;
+    border: 2px solid white;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+    /* backdrop-filter: blur(50px) */
+}
+.swal2-image{
+   width: 270px !important;
+    min-height: 60px !important;
+    position: relative;
+    top: -170px;
+    /* left: -120px; */
+}
+.swal2-icon{
+    position: relative !important;
+    top: 70px !important;
+}
+
+
+
+.errorMsg{
+    display: none;
 }

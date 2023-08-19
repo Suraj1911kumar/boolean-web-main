@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- Demo styles -->
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .swiper {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body style="background-color: #000; color: white;">
+    <!-- Swiper -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/src/about1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/src/abou2.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/src/about3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <!-- ---------------- -->
+            <div class="col-lg-6">
+                <div class="swiper tswiper " >
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            OURSERVICES
+                            Experience the power of Innovation
+                            We Love Creating
+                            Boolean Artificial Intelligence offers a host of technical services to our clients, our
+                            services cover a vast range of spectrum, specially tailored for our clients.
+                            OURSERVICES
+                            Experience the power of Innovation
+                            We Love Creating
+                            Boolean Artificial Intelligence offers a host of technical services to our clients, our
+                            services cover a vast range of spectrum, specially tailored for our clients.
+                            OURSERVICES
+                            Experience the power of Innovation
+                            We Love Creating
+                            Boolean Artificial Intelligence offers a host of technical services to our clients, our
+                            services cover a vast range of spectrum, specially tailored for our clients.
+                            OURSERVICES
+                            Experience the power of Innovation
+                            We Love Creating
+                            Boolean Artificial Intelligence offers a host of technical services to our clients, our
+                            services cover a vast range of spectrum, specially tailored for our clients.
+                            OURSERVICES
+                            Experience the power of Innovation
+                            We Love Creating
+                            Boolean Artificial Intelligence offers a host of technical services to our clients, our
+                            services cover a vast range of spectrum, specially tailored for our clients.
+                        </div>
+                        <div class="swiper-slide">
+                            Experience the power of Innovation
+                            We Love Creating
+                            Boolean Artificial Intelligence offers a host of technical services to our clients, our
+                            services cover a vast range of spectrum, specially tailored for our clients.
+                        </div>
+                        <div class="swiper-slide">
+                            gfdhgkj
+                            Experience the power of Innovation
+                            We Love Creating
+                            Boolean Artificial Intelligence offers a host of technical services to our clients, our
+                            services cover a vast range of spectrum, specially tailored for our clients.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+        var swiper = new Swiper(".tswiper", {
+            effect: "fade",
+            slidesPerView: 1,
+            spaceBetween: 30,
+            effect:"fade",
+            loop: true,
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

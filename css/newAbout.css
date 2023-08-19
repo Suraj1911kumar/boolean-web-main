@@ -6,14 +6,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body {
     color: white;
     font-family: 'Poppins', sans-serif;
     /* min-width: 400px; */
     overflow-x: hidden;
 }
-
+body::-webkit-scrollbar{
+    background-color: transparent;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #6d95fc;
+    border-radius: 28px;
+}
 
 a {
     color: #fff;
@@ -26,8 +34,9 @@ a {
     gap: 40px;
     color: white !important;
 }
-.active,
-.nav-link:hover{
+.active span,
+.nav-link:hover span { 
+    padding-bottom: 10px;
     border-bottom: 1px solid #6d95fc !important;
 }
 
@@ -215,30 +224,30 @@ a {
 }
 
 .button {
-    /* position: relative; */
+    margin: 5px;
+    color: white;
     border-radius: 2px;
     border: 3px solid #6d95fc;
-    background: transparent;
     box-sizing: border-box;
-    width: 175px;
+    max-width: 175px;
     display: flex;
     flex-direction: row;
     padding: 10px 25px;
     align-items: center;
     justify-content: center;
-    text-align: center;
     font-size: 17px;
-    color: #fff;
-    font-family: Poppins;
-    margin-top: 26px;
-    transition: all 0.2s ease-in;
     cursor: pointer;
+    background-color: #000;
 }
 
 
 .button:hover {
+    margin-bottom: 5px;
+    border: 3px solid #000;
+    outline: 3px solid #6d95fc;
     background-color: #6d95fc;
     color: black;
+    font-weight: 500;
 }
 
 
@@ -474,6 +483,7 @@ a {
 .content-about p {
     font-size: 48px;
     font-weight: 500;
+    color: #6d95fc;
 }
 
 .content-about span {
@@ -538,6 +548,7 @@ a {
 
 .our-mission-content b {
     font-size: 48px;
+    color: #6d95fc;
 }
 
 .our-mission-content span {
@@ -628,6 +639,11 @@ a {
     color: #6d95fc;
     cursor: pointer;
 }
+.list-inline-item a{
+    text-decoration: none !important;
+    color: #6d95fc;
+    text-transform: uppercase;
+}
 .list-inline-item:hover i{
     transform: scale(1.2);
 }
@@ -710,3 +726,9 @@ a {
     color: black;
     z-index: 100;
   }
+  #btn-back-to-top i{
+    transform: scale(1.2);
+}
+#btn-back-to-top:hover i{
+    transform: scale(1.5);
+}

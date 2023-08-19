@@ -67,7 +67,7 @@ var TextSwiper = new Swiper(".TextSwiper", {
   effect: "fade",
   loop: true,
   autoplay: {
-    delay: 2500,
+    delay: 1500,
     disableOnInteraction: false,
   },
   pagination: {
@@ -83,4 +83,24 @@ var TextSwiper = new Swiper(".TextSwiper", {
 let loader = document.getElementById("center");
 window.addEventListener("load", function () {
   loader.style.display = "none";
+});
+
+var swiper = new Swiper(".aboutSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+
+  autoplay: {
+    delay: 1500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });

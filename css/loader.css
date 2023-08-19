@@ -6,6 +6,7 @@
     /* border: 1px solid black; */
     position: fixed;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -15,7 +16,11 @@
     overflow-y: hidden;
     z-index: 100;
 }
-
+.w{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .wave {
     height: 100px;
     width: 5px;
@@ -56,5 +61,28 @@
 
     100% {
         transform: scale(0);
+    }
+}
+
+
+#para {
+    position: relative;
+}
+
+#para span {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+}
+
+@keyframes flip {
+
+    0%,
+    50% {
+        transform: rotateY(360deg)
     }
 }
