@@ -22,8 +22,9 @@
         display: none;
     }
 }
+
 @media(min-width:1920px) {
-    .hero{
+    .hero {
         height: 100vh;
         width: 100vw;
         background: url("../images/src/fullBackground.svg");
@@ -36,6 +37,7 @@
         flex-direction: column;
     }
 }
+
 @media only screen and (max-width:1920px) {
     .hero {
         max-width: 100%;
@@ -99,6 +101,58 @@
         /* background-position: center; */
         /* object-fit: contain; */
     }
+}
+
+@media (max-width:1200px) {
+
+
+    .footer-contain-text {
+        width: 100%;
+        position: relative;
+        top: 50px;
+        /* border: 1px solid wheat; */
+    }
+
+
+    .footer-contain-text h2 {
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 124.5%;
+        /* 3.735rem */
+    }
+
+    .footer-contain-text .footer1 {
+        width: 5.09375rem;
+        /* color: #6D95FC; */
+        margin: 1.62rem 0px;
+        border: 1px solid #6d95fc;
+
+    }
+
+    .footer-contain-text .fpara {
+        width: 100%;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 166.5%;
+        /* 2.18531rem */
+        letter-spacing: 0.0525rem;
+        margin: 2rem 0px;
+
+    }
+
+    form button {
+        width: inherit !important;
+        padding-inline: 10px;
+    }
+
+    .form-label {
+        font-size: 14px;
+    }
+
+
+
 }
 
 @media (max-width:767px) {
@@ -187,9 +241,11 @@
     .para-testi {
         font-size: 14px;
     }
-    .detail-testi{
+
+    .detail-testi {
         gap: 10apx;
     }
+
     .face-img {
         width: 20vw;
         height: 20vh;
@@ -202,5 +258,47 @@
     .comma-img {
         width: 30px;
         height: 30px;
+    }
+}
+
+
+@media (max-width:320px) {
+    .logo_img {
+        min-width: 100px !important;
+    }
+
+    .welcome-to-boolean {
+        font-size: 5vw;
+        margin-inline: auto;
+    }
+
+    .unleashing-the-power-container {
+        font-size: 10vw;
+        margin-inline: auto !important;
+        text-align: center;
+    }
+
+    .header-content {
+        font-size: 10vw;
+        margin-inline: auto !important;
+        text-align: center;
+        width: 100px;
+    }
+
+    .head-all {
+        font-size: 10vw;
+        margin-inline: auto !important;
+        text-align: center;
+    }
+    .leverage-the-power-container{
+        font-size: 10vw;
+        margin-inline: auto !important;
+        text-align: center;
+    }
+    .test h1{
+        font-size: 10vw;
+        margin-inline: auto !important;
+        text-align: center;
+        width: 100px;
     }
 }

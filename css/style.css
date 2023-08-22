@@ -15,7 +15,7 @@ body {
     height: auto;
     background-color: black;
     font-family: 'Poppins', sans-serif;
-    /* min-width: 576px; */
+    min-width: 175px;
     overflow-x: hidden;
     /* scrollbar-gutter: stable; */
     width: 100%;
@@ -101,6 +101,7 @@ a {
     color: white !important;
 }
 
+
 .active span,
 .nav-link:hover span {
     padding-bottom: 10px;
@@ -112,15 +113,25 @@ a {
 }
 
 
-
 .welcome-to-boolean {
     position: relative;
     letter-spacing: 0.14em;
+    width: 26ch;
     text-transform: uppercase;
     font-weight: 500;
     color: #6d95fc;
     display: inline-block;
     /* max-width: 600px; */
+    overflow: hidden;
+    border-right: 3px solid;
+    animation: type 5s infinite steps(30);
+    white-space: nowrap;
+}
+
+@keyframes type {
+    from {
+        width: 0;
+    }
 }
 
 .innovation {
@@ -138,6 +149,7 @@ a {
     max-width: 819px;
     width: initial;
 }
+
 
 .frame-child {
     position: relative;
@@ -160,6 +172,7 @@ a {
 .welcome-to-boolean-ai-parent {
     position: relative;
     margin-top: 125px;
+    width: auto;
     max-width: 819px;
     height: auto;
     display: flex;
@@ -174,7 +187,10 @@ a {
     color: #fff;
     z-index: 2;
     font-family: Poppins;
+
 }
+
+
 
 .gloab-icon {
     /* position: relative; */
@@ -408,7 +424,7 @@ a {
     /* text-transform: uppercase; */
     display: inline-block;
     text-align: left;
-    width: inheri;
+    width: inherit;
     max-width: 700px;
 }
 
@@ -632,17 +648,25 @@ a {
     background: linear-gradient(175.64deg, rgba(17, 24, 42, 0.7), rgba(17, 24, 42, 0));
     max-width: 600px;
     height: auto;
-    /* min-height: 314px; */
-    /* max-height: 800px; */
-    /* max-height: 500px; */
-    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
-    /* gap: 50px; */
     padding: 10px;
+    scale: 0.9;
+    filter: blur(1.2px);
+    opacity: 0.5;
+    transition: all 0.5s;
 }
 
+.rec-testi:hover {
+    scale: 1;
+    filter: blur(0);
+    opacity: 1;
+    background: linear-gradient(175.64deg, rgba(17, 24, 42, 0.5), rgba(17, 24, 42, 0.7)) #6d95fc;
+}
+
+
 .para-testi {
+    cursor: pointer;
     position: relative;
     font-size: 21px;
     letter-spacing: 0.04em;
@@ -650,14 +674,18 @@ a {
     font-weight: 300;
     font-family: Poppins;
     color: #fff;
+    /* max-height: 200px; */
+    /* overflow: hidden; */
     text-align: center;
     /* display: inline-block; */
     max-width: 100%;
-    max-height: 500px;
+    min-height: 300px;
+    flex-wrap: nowrap;
+    /* max-height: 500px; */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* text-align: center; */
+    text-align: center;
 }
 
 .detail-testi {
@@ -865,11 +893,13 @@ a {
 .list-inline-item {
     cursor: pointer;
 }
-.list-inline-item a{
+
+.list-inline-item a {
     text-decoration: none !important;
     color: #6d95fc !important;
     text-transform: uppercase;
 }
+
 .list-inline-item b {
     margin-top: 18px !important;
     height: 20px !important;
@@ -1062,6 +1092,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 50px;
 }
 
 .footer-left {
@@ -1121,6 +1152,7 @@ a {
 
 
 .address2-content .head {
+    width: auto;
     color: #FFF;
     font-size: 1.313rem;
     font-style: normal;
@@ -1128,6 +1160,10 @@ a {
     line-height: 166.5%;
     letter-spacing: 0.84px;
 
+}
+
+.address2-content span {
+    max-width: 200px;
 }
 
 .footer-right {
@@ -1155,14 +1191,14 @@ a {
 }
 
 form input {
-    height: 47px;
-    width: 26.625rem;
+    max-height: 47px;
+    min-width: 50px !important;
     border: 2px solid white;
     background-color: transparent !important;
 }
 
 form textarea {
-    height: 168px;
+    max-height: 168px;
     width: 26.625rem;
     border: 2px solid white;
     background-color: transparent !important;
@@ -1176,7 +1212,8 @@ form textarea {
 form button {
     display: flex;
     width: 188px !important;
-    height: 43.647px;
+    /* width: inherit !important; */
+    max-height: 43.647px;
     padding: 10px 25px;
     justify-content: center;
     align-items: center;
@@ -1238,49 +1275,6 @@ form button {
 
 }
 
-@media (max-width:1200px) {
-
-
-    .footer-contain-text {
-        width: 100%;
-        position: relative;
-        top: 50px;
-        /* border: 1px solid wheat; */
-    }
-
-
-    .footer-contain-text h2 {
-        font-size: 2rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 124.5%;
-        /* 3.735rem */
-    }
-
-    .footer-contain-text .footer1 {
-        width: 5.09375rem;
-        /* color: #6D95FC; */
-        margin: 1.62rem 0px;
-        border: 1px solid #6d95fc;
-
-    }
-
-    .footer-contain-text .fpara {
-        width: 100%;
-        font-size: 1rem;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 166.5%;
-        /* 2.18531rem */
-        letter-spacing: 0.0525rem;
-        margin: 2rem 0px;
-
-    }
-
-
-
-
-}
 
 @media (max-width:767px) {
     .contactline {
@@ -1559,3 +1553,24 @@ form button {
     font-size: 20px !important;
 }
 
+
+
+
+
+
+
+
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    /* background-color: black; */
+    transition: 1s all ease;
+    border:none;
+  }
+ 
+  .reveal.act{
+    transform: translateY(0);
+    opacity: 1;
+  }

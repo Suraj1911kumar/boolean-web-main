@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -8,14 +11,16 @@
 
 body {
     color: white !important;
-    font-family: 'Poppins', sans-serif;
-    /* min-width: 400px; */
+    font-family: 'Poppins', sans-serif !important;
+    min-width: 100px;
     overflow-x: hidden;
 }
-body::-webkit-scrollbar{
+
+body::-webkit-scrollbar {
     background-color: transparent;
 }
-body::-webkit-scrollbar-thumb{
+
+body::-webkit-scrollbar-thumb {
     background-color: #6d95fc;
     border-radius: 28px;
 }
@@ -34,7 +39,7 @@ a {
 }
 
 .active span,
-.nav-link:hover span { 
+.nav-link:hover span {
     padding-bottom: 10px;
     border-bottom: 1px solid #6d95fc !important;
 }
@@ -71,13 +76,15 @@ a {
     height: 100%;
     /* position: fixed; */
     /* max-height: 1000px; */
-    background-image: url("../images/src/aboutImg/background.svg");
-    background-size: cover;
+    background: url("../images/src/aboutImg/contactBack.svg");
+    background-size: contain;
     background-repeat: no-repeat;
+    /* opacity: 0.5; */
     background-position: center;
-    overflow: visible !important;
+    /* overflow: visible !important; */
+    
 }
-        
+
 .head-contact {
     display: flex;
     justify-content: center;
@@ -189,8 +196,9 @@ a {
     width: 100%;
     position: relative;
     top: 50px;
+    /* z-index:  !important; */
     border-radius: 30px;
-    background: linear-gradient(223.47deg, rgba(109, 149, 252, 0.24) 3.19%, rgba(21, 21, 21, 0) 100%) black;
+    background: linear-gradient(223.47deg, rgba(109, 149, 252, 0.24) 3.19%, rgba(21, 21, 21, 0) 100%) transparent;
     opacity: 1;
 }
 
@@ -199,10 +207,13 @@ a {
 }
 
 
-form{
+form {
     height: auto;
     width: 100%;
+    background: linear-gradient(223.47deg, rgba(109, 149, 252, 0.24) 3.19%, rgba(21, 21, 21, 0) 100%) transparent;
+    z-index: 3;
 }
+
 form input {
     height: 47px;
     width: 26.625rem;
@@ -211,9 +222,10 @@ form input {
     background-color: transparent !important;
 }
 
-form small{
+form small {
     color: red;
 }
+
 form textarea {
     height: 168px;
     width: 26.625rem;
@@ -497,11 +509,12 @@ form button {
     margin: auto;
 }
 
-.list-inline-item i{
+.list-inline-item i {
     color: #6d95fc !important;
     cursor: pointer;
 }
-.list-inline-item a{
+
+.list-inline-item a {
     text-decoration: none !important;
     color: #6d95fc !important;
     text-transform: uppercase;
@@ -546,15 +559,17 @@ form button {
     color: black;
     z-index: 100;
 }
-#btn-back-to-top i{
+
+#btn-back-to-top i {
     transform: scale(1.2);
 }
-#btn-back-to-top:hover i{
+
+#btn-back-to-top:hover i {
     transform: scale(1.5);
 }
 
 
-.swal2-modal{
+.swal2-modal {
     background-color: black;
     /* gap: 10px; */
     color: white;
@@ -566,20 +581,22 @@ form button {
     align-items: center !important;
     /* backdrop-filter: blur(50px) */
 }
-.swal2-image{
-   width: 270px !important;
+
+.swal2-image {
+    width: 270px !important;
     min-height: 60px !important;
     position: relative;
     top: -170px;
     /* left: -120px; */
 }
-.swal2-icon{
+
+.swal2-icon {
     position: relative !important;
     top: 70px !important;
 }
 
 
 
-.errorMsg{
+.errorMsg {
     display: none;
 }

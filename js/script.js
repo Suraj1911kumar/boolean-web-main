@@ -2,9 +2,11 @@ var swiper = new Swiper(".mySwiper", {
   slidesPerView: "auto",
   loop: true,
   spaceBetween: 0,
+  zoom:true,
   autoplay: {
+    pauseOnMouseEnter: true,
     delay: 1500,
-    disableOnInteraction: false,
+    disableOnInteraction: true,
   },
   pagination: {
     el: ".swiper-pagination",
@@ -66,6 +68,8 @@ var TextSwiper = new Swiper(".TextSwiper", {
   centeredSlides: true,
   effect: "fade",
   loop: true,
+
+  simulateTouch: false,
   autoplay: {
     delay: 1500,
     disableOnInteraction: false,
@@ -89,7 +93,8 @@ var swiper = new Swiper(".aboutSwiper", {
   slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
-
+  zoom: true,
+  simulateTouch: false,
   autoplay: {
     delay: 1500,
     disableOnInteraction: false,
@@ -104,3 +109,23 @@ var swiper = new Swiper(".aboutSwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+// -----------------------------------------reveal feature   ------------------------
+
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("act");
+    } else {
+      reveals[i].classList.remove("act");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
