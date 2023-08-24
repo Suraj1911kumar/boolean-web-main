@@ -562,7 +562,7 @@ a {
     margin-top: -10rem !important;
     height: 832px;
     width: 100%;
-    background-image: url("../images/about-img/footer-wave.png");
+    background-image: url("../images/src/footer.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
@@ -578,7 +578,7 @@ a {
 
 @media (max-width:767px) {
     .footer-second {
-        background: url("../images/about-img/footer-wave.png");
+        background: url("../images/src/footer.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
@@ -589,7 +589,7 @@ a {
     .footer-second {
         height: 832px;
         width: 100%;
-        background-image: url("../images/about-img/footer-wave.png");
+        background-image: url("../images/src/footer.png");
         background-repeat: no-repeat;
         /* background-size: 100% 100%; */
         background-position: center;

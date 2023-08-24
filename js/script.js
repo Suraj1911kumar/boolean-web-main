@@ -2,7 +2,6 @@ var swiper = new Swiper(".mySwiper", {
   slidesPerView: "auto",
   loop: true,
   spaceBetween: 0,
-  zoom:true,
   autoplay: {
     pauseOnMouseEnter: true,
     delay: 1500,
@@ -30,7 +29,7 @@ var swiper = new Swiper(".mySwiper", {
       spaceBetween: 20,
     },
     1024: {
-      slidesPerView: 2,
+      slidesPerView: 3,
       spaceBetween: 20,
     },
     1440: {
@@ -68,7 +67,6 @@ var TextSwiper = new Swiper(".TextSwiper", {
   centeredSlides: true,
   effect: "fade",
   loop: true,
-
   simulateTouch: false,
   autoplay: {
     delay: 1500,
@@ -90,10 +88,10 @@ window.addEventListener("load", function () {
 });
 
 var swiper = new Swiper(".aboutSwiper", {
+  zoom: true,
   slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
-  zoom: true,
   simulateTouch: false,
   autoplay: {
     delay: 1500,
@@ -112,20 +110,27 @@ var swiper = new Swiper(".aboutSwiper", {
 
 // -----------------------------------------reveal feature   ------------------------
 
-function reveal() {
-  var reveals = document.querySelectorAll(".reveal");
+// function reveal() {
+//   var reveals = document.querySelectorAll(".reveal");
 
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 150;
+//   for (var i = 0; i < reveals.length; i++) {
+//     var windowHeight = window.innerHeight;
+//     var elementTop = reveals[i].getBoundingClientRect().top;
+//     var elementVisible = 150;
 
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("act");
-    } else {
-      reveals[i].classList.remove("act");
-    }
-  }
-}
+//     if (elementTop < windowHeight - elementVisible) {
+//       reveals[i].classList.add("act");
+//     } else {
+//       reveals[i].classList.remove("act");
+//     }
+//   }
+// }
 
-window.addEventListener("scroll", reveal);
+// window.addEventListener("scroll", reveal);
+
+
+
+
+
+
+

@@ -3,9 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="We at Boolean ai believe that simplicity lies at
+    the heart of complexity, we aim at providing simple solutions to the most challenging problems a
+    business might face in today’s rapidly changing world.">
+    <meta name="keywords" content="boolean ai, boolean, tech, IT, ai">
+    <meta name="author" content="booelan ai">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Boolean Ai - Complexity Simplyfy</title>
-    <link rel="shortcut icon" href="./images/src/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/favicon_io/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/loader.css">
     <link rel="stylesheet" href="./css/styleMedia.css">
@@ -29,6 +34,7 @@
     <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
         <i class="fas fa-arrow-up"></i>
     </button>
+
 
 
     <div id="center">
@@ -58,9 +64,11 @@
         <div class="main-container">
             <nav class=" navbar navbar-fixed-top navbar-expand-lg navbar-dark " data>
                 <div class=" container-fluid">
-                    <a class="navbar-brand col-4 col-lg-3 col-md-6 col-sm-10" href="./index.html">
-                        <img src="./images/src/logo.png" alt="logo here" width="250" height="32"
-                            class="img-fluid logo_img">
+                    <a class="navbar-brand col-4 col-lg-3 col-md-6 col-sm-10 " href="./index.html">
+                        <div class="logo">
+                            <img src="./images/src/logo.png" alt="logo here" width="250" height="32"
+                                class="img-fluid logo_img">
+                        </div>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -128,7 +136,7 @@
 
         <section class="about_us container ">
 
-            <div class="row row-cols-1 row-cols-xl-2 row-cols-lg-2  ab-row d-flex justify-content-center border-5 1 ">
+            <div class="row row-cols-1 row-cols-xl-2 row-cols-lg-2  ab-row d-flex justify-content-center border-5 ">
                 <div class="col-md-12 col-sm-12 ">
 
                     <div class="head-all  ">
@@ -138,13 +146,19 @@
                     <div class="swiper aboutSwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="./images/src/about1.png" class="img-fluid" alt="">
+                                <div class="swiper-zoom-container">
+                                    <img src="./images/src/about1.png" class="img-fluid" alt="">
+                                </div>
                             </div>
                             <div class="swiper-slide">
-                                <img src="./images/src/abou2.png" class="img-fluid" alt="">
+                                <div class="swiper-zoom-container">
+                                    <img src="./images/src/abou2.png" class="img-fluid" alt="">
+                                </div>
                             </div>
                             <div class="swiper-slide">
-                                <img src="./images/src/about3.png" class="img-fluid" alt="">
+                                <div class="swiper-zoom-container">
+                                    <img src="./images/src/about3.png" class="img-fluid" alt="">
+                                </div>
                             </div>
                         </div>
                         <div class="swiper-pagination"></div>
@@ -634,7 +648,7 @@
                 <div class="footer-right ">
                     <div class="footer-center-contact">
                         <div class="footer-contain-contact ">
-                            <form name="form" target="_blank" method="POST">
+                            <form name="form" target="_blank" method="POST" id="form">
                                 <div class="mb-3">
                                     <label for="name" class="form-label">YOUR NAME</label>
                                     <input type="text" name="name" class="form-control rounded-0" id="name">
@@ -704,13 +718,39 @@
 
 
 
+    <div id="lawmsg" class="alert alert-info alert-dismissible cookie m-2 fixed-bottom" role="alert">
+        <button type="button" class="closex" data-dismiss="alert">
+            <span aria-hidden="true">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+        </button>
+        <div class="cookieCon">
+            <h2>Cookies</h2>
+            <p>We uses cookie to enhance user experience</p>
+            <button><a href="./files.html#cookie">cookies policy</a></button>
+        </div>
+    </div>
+    <div id="cursor">
+    </div>
+    <div id="cursor2">
+    </div>
+
+    <!-- 
+-----------------------------------------------------------------------------------------------------------------------------------
+             ------------------------------------------scripts starts----------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------- 
+     -->
 
 
+    <script>
+        let cursor = document.querySelector("#cursor");
+        let cursor2 = document.querySelector("#cursor2");
 
-
-
-
-
+        document.addEventListener("mousemove", function (e) {
+            cursor.style.cssText = cursor2.style.cssText = "left : " + e.clientX + "px;" + "top : " + e.clientY + "px;";
+        })
+    </script>
+    <script src="./js/cookie.js"></script>
 
     <script src="https://smtpjs.com/v3/smtp.js">
     </script>
@@ -720,87 +760,124 @@
     <script>
 
         function mail() {
-
+            let mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
             let name = document.getElementById("name").value
             let email = document.getElementById("email").value
             let msg = document.getElementById("message").value
 
-            var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
 
-            if (name == "" && email == "" && msg == "") {
+            // --------------------validation start -------------------
+
+
+            if (name === "" && email === "" && msg === "") {
                 Swal.fire({
                     imageUrl: './images/src/logo.png',
                     icon: 'error',
                     title: 'Oops...',
                     imageWidth: 100,
                     imageHeight: 50,
-                    timer: 2000,
-                    showConfirmButton: false,
+                    timer: 5000,
                     imageAlt: 'Custom image',
+                    showConfirmButton: false,
                     showClass: {
                         popup: 'animate__animated animate__wobble'
                     },
                     hideClass: {
                         popup: 'animate__animated animate__fadeOutUp'
                     },
-                    text: 'You have not filled any data ! plz fill it....',
+                    text: 'You have not filled any data ! plz fill it',
                 })
-                return false;
+            } else if (name === "" || name === 0) {
+                Swal.fire('Please Fill Your Name');
             }
-            else if (name == "" || name == 0) {
-                alert("Plz fill the name");
-                return false;
-            } else if (email == "" || email == 0) {
-                alert("plz fill the email")
-                return false;
+            else if (email == "" || email == 0) {
+                Swal.fire('Please Fill Your email');
+            } else if (!email.match(mailformat)) {
+                Swal.fire('Not a valid Email!! please fill valid email');
             }
-            else if (!email.match(mailformat)) {
-                alert("not valid email")
-                return false;
-            } else if (msg == "" || msg == 0) {
-                alert("No msg here!! Plz write any message")
-                return false
-            }
-
-
-
-
-            Email.send({
-                Host: "smtp.elasticemail.com",
-                Username: "s.k.kh1911@gmail.com",
-                Password: "8FD785BA69668E539FB09FC92B7E114F7587",
-                To: "s.k.kh1911@gmail.com",
-                From: "s.k.kh1911@gmail.com",
-                Subject: "Mail from client",
-                Body: "Name : " + name + "<br/> User Email : " + email + "<br/> Message : " + msg
-            }
-            ).then(
-                message => Swal.fire({
-                    // `Hallo ${name}`,
-                    // ' your message send succesfully',
-                    // 'success',
-                    // 'animate__animated animate__wobble',
-
-                    // 'animate__animated animate__fadeOutUp'
-                    imageUrl: './images/src/logo.png',
-                    icon: 'success',
-                    title: `Hallo ${name}`,
-                    imageWidth: 100,
-                    imageHeight: 50,
-                    imageAlt: 'Custom image',
-                    showClass: {
-                        popup: 'animate__animated animate__backInDown'
+            else if (msg == "" || msg == 0) {
+                const swalWithBootstrapButtons = Swal.mixin({
+                    customClass: {
+                        confirmButton: 'btn btn-success',
+                        cancelButton: 'btn btn-danger'
                     },
-                    hideClass: {
-                        popup: 'animate__animated animate__fadeOutUp'
-                    },
-                    text: 'Thanks for messaging us. we contact you as soon as possible....',
-
+                    buttonsStyling: false
                 })
-            )
 
+                swalWithBootstrapButtons.fire({
+                    title: 'Are you sure?',
+                    text: "You won't be able to revert this!",
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonText: 'yes send it!!',
+                    cancelButtonText: 'No, cancel!',
+                    reverseButtons: true
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        Email.send({
+                            Host: "smtp.elasticemail.com",
+                            Username: "s.k.kh1911@gmail.com",
+                            Password: "8FD785BA69668E539FB09FC92B7E114F7587",
+                            To: "s.k.kh1911@gmail.com",
+                            From: "s.k.kh1911@gmail.com",
+                            Subject: "Mail from client",
+                            Body: "Name : " + name + "<br/> User Email : " + email + "<br/> Message : " + msg
+                        }
+                        ).then(
+                            message => Swal.fire({
+                                imageUrl: './images/src/logo.png',
+                                icon: 'success',
+                                title: `Hallo ${name}`,
+                                imageWidth: 100,
+                                imageHeight: 50,
+                                timer: 5000,
+                                imageAlt: 'Custom image',
+                                showConfirmButton: false,
+                                showClass: {
+                                    popup: 'animate__animated animate__backInDown'
+                                },
+                                hideClass: {
+                                    popup: 'animate__animated animate__fadeOutUp'
+                                },
+                                text: 'Thanks for messaging us. we contact you as soon as possible....',
+
+                            })
+                        ).then(document.getElementById("form").reset());
+                    }
+                })
+            }
+            else {
+                Email.send({
+                    Host: "smtp.elasticemail.com",
+                    Username: "s.k.kh1911@gmail.com",
+                    Password: "8FD785BA69668E539FB09FC92B7E114F7587",
+                    To: "s.k.kh1911@gmail.com",
+                    From: "s.k.kh1911@gmail.com",
+                    Subject: "Mail from client",
+                    Body: "Name : " + name + "<br/> User Email : " + email + "<br/> Message : " + msg
+                }
+                ).then(
+                    message => Swal.fire({
+                        imageUrl: './images/src/logo.png',
+                        icon: 'success',
+                        title: `Hallo ${name}`,
+                        imageWidth: 100,
+                        imageHeight: 50,
+                        timer: 5000,
+                        imageAlt: 'Custom image',
+                        showConfirmButton: false,
+                        showClass: {
+                            popup: 'animate__animated animate__backInDown'
+                        },
+                        hideClass: {
+                            popup: 'animate__animated animate__fadeOutUp'
+                        },
+                        text: 'Thanks for messaging us. we contact you as soon as possible....',
+
+                    })
+                ).then(document.getElementById('form').reset())
+            }
         }
-
 
     </script>
 
@@ -840,7 +917,11 @@
             document.documentElement.scrollTop = 0;
         }
     </script>
-
+    <script src="
+    https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js
+    ">
+        Cookies.set('boolea', 'true')
+    </script>
 </body>
 
 </html>
