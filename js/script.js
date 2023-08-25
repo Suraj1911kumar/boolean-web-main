@@ -68,7 +68,10 @@ var TextSwiper = new Swiper(".TextSwiper", {
   effect: "fade",
   loop: true,
   simulateTouch: false,
+  effect: "fade",
+  loop: true,
   autoplay: {
+    pauseOnMouseEnter: true,
     delay: 1500,
     disableOnInteraction: false,
   },
@@ -92,8 +95,10 @@ var swiper = new Swiper(".aboutSwiper", {
   slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
+  // effect:"fade",
   simulateTouch: false,
   autoplay: {
+    pauseOnMouseEnter: true,
     delay: 1500,
     disableOnInteraction: false,
   },
@@ -107,6 +112,7 @@ var swiper = new Swiper(".aboutSwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+swiper.controller.control = this.TextSwiper;
 
 // -----------------------------------------reveal feature   ------------------------
 
@@ -128,9 +134,10 @@ var swiper = new Swiper(".aboutSwiper", {
 
 // window.addEventListener("scroll", reveal);
 
+// let stop = document.querySelector(".about_us");
 
-
-
-
-
-
+// function stop() {
+//   document.addEventListener("mouseover", function () {
+//     document.getElementsById("#TextSwiper").classList.removeClass("TextSwiper");
+//   });
+// }

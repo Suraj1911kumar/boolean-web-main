@@ -1597,6 +1597,7 @@ form button {
 
 
 .cookie {
+    transition: all 0.5s ease-out;
     max-width: 300px;
     min-height: 150px;
     color: white !important;

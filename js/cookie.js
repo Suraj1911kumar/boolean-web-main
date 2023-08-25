@@ -29,3 +29,9 @@ function showLaw() {
     setCookie("cookieName", "cookieValue", 2);
   }
 }
+
+const mytimeout = setTimeout(timeout, 3000);
+
+function timeout() {
+  document.getElementById("lawmsg").style.display = "none";
+}
