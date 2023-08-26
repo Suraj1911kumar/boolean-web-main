@@ -1690,3 +1690,22 @@ form button {
     z-index: 11;
     /* transition: 0.25s; */
 }
+
+
+
+.progress-container {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 8px;
+    background: transparent;
+}
+
+.progress-bar {
+    height: 8px;
+    background-color: #6d95fc !important;
+    border-radius:25px 25px 25px 0 ;
+    border: 1px solid black;
+    width: 0%;
+}

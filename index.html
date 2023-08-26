@@ -738,12 +738,20 @@
     <div id="cursor2">
     </div>
 
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+
+
     <!-- 
 -----------------------------------------------------------------------------------------------------------------------------------
              ------------------------------------------scripts starts----------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------- 
      -->
 
+   
+
+    
 
     <script>
         let cursor = document.querySelector("#cursor");
@@ -899,7 +907,7 @@
 
         // When the user scrolls down 20px from the top of the document, show the button
         window.onscroll = function () {
-            scrollFunction();
+            scrollFunction(); myFunction();
         };
 
         function scrollFunction() {
@@ -911,6 +919,12 @@
             } else {
                 mybutton.style.display = "none";
             }
+        }
+        function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("myBar").style.width = scrolled + "%";
         }
         // When the user clicks on the button, scroll to the top of the document
         mybutton.addEventListener("click", backToTop);

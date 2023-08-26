@@ -732,3 +732,30 @@ a {
 #btn-back-to-top:hover i{
     transform: scale(1.5);
 }
+
+
+
+
+
+
+
+
+
+
+
+.progress-container {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 8px;
+    background: transparent;
+}
+
+.progress-bar {
+    height: 8px;
+    background: #6d95fc;
+    border-radius:25px 25px 25px 0 ;
+    border: 1px solid black;
+    width: 0%;
+}

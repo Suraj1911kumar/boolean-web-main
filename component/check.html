@@ -1,0 +1,79 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .main {
+        height: 100px;
+        width: 0%;
+        border-radius: 50%;
+        overflow: hidden;
+        background: url(../images/src/about1.png) no-repeat center;
+        border: 1px solid white;
+    }
+</style>
+
+<body>
+    <div class="main" id="main"></div>
+
+
+
+
+    <script>
+        window.onscroll = function () {
+            scrollF()
+        }
+        function scrollF() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("main").style.width = scrolled + "%";
+
+        }
+    </script>
+</body>
+
+</html> -->
+
+
+<html>
+
+<head>
+    <script src="myscript.js"></script>
+</head>
+
+<body onscroll="myfunc()">
+    <div class="lorem">
+        lorem100000
+    </div>
+    <div class="firstdiv">
+
+    </div>
+    <script>
+        function myfunc() {
+            var x = document.getElementsByClassName("firstdiv"); console.dir(x);
+            x[0].style.width = "100%"; x[0].style.height = "100%"; x[0].style.background = "red";
+            x[0].style.position = "relative"; x[0].style.top = "0"; x[0].style.left = "0";
+        } 
+    </script>
+</body>
+
+</html>
