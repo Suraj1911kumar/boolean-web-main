@@ -1,3 +1,5 @@
+
+
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: "auto",
   loop: true,
@@ -47,20 +49,20 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-var btn = $("#button");
+// var btn = $("#button");
 
-$(window).scroll(function () {
-  if ($(window).scrollTop() > 300) {
-    btn.addClass("show");
-  } else {
-    btn.removeClass("show");
-  }
-});
+// $(window).scroll(function () {
+//   if ($(window).scrollTop() > 300) {
+//     btn.addClass("show");
+//   } else {
+//     btn.removeClass("show");
+//   }
+// });
 
-btn.on("click", function (e) {
-  e.preventDefault();
-  $("html, body").animate({ scrollTop: 0 }, "300");
-});
+// btn.on("click", function (e) {
+//   e.preventDefault();
+//   $("html, body").animate({ scrollTop: 0 }, "300");
+// });
 
 var TextSwiper = new Swiper(".TextSwiper", {
   spaceBetween: 30,
@@ -85,11 +87,11 @@ var TextSwiper = new Swiper(".TextSwiper", {
   },
 });
 
+
 let loader = document.getElementById("center");
 window.addEventListener("load", function () {
   loader.style.display = "none";
 });
-
 var swiper = new Swiper(".aboutSwiper", {
   zoom: true,
   slidesPerView: 1,
@@ -141,3 +143,4 @@ swiper.controller.control = this.TextSwiper;
 //     document.getElementsById("#TextSwiper").classList.removeClass("TextSwiper");
 //   });
 // }
+

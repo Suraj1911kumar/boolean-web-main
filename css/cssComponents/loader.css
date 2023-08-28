@@ -1,6 +1,4 @@
-/* body{
-    overflow: hidden;
-} */
+
 
 #center {
     /* border: 1px solid black; */
@@ -86,7 +84,6 @@
 }
 
 #para span {
-    /* width: 100%; */
     position: relative;
     display: inline-block;
     font-size: 40px;
