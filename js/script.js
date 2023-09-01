@@ -49,73 +49,18 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-// var btn = $("#button");
 
-// $(window).scroll(function () {
-//   if ($(window).scrollTop() > 300) {
-//     btn.addClass("show");
-//   } else {
-//     btn.removeClass("show");
-//   }
-// });
 
-// btn.on("click", function (e) {
-//   e.preventDefault();
-//   $("html, body").animate({ scrollTop: 0 }, "300");
-// });
-
-var TextSwiper = new Swiper(".TextSwiper", {
-  spaceBetween: 30,
-  centeredSlides: true,
-  effect: "fade",
-  loop: true,
-  simulateTouch: false,
-  effect: "fade",
-  loop: true,
-  autoplay: {
-    pauseOnMouseEnter: true,
-    delay: 1500,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-
+const myCarouselElement = document.querySelector('#carouselExampleFade')
+const carousel = new bootstrap.Carousel(myCarouselElement, {
+  interval: 2000,
+  wrap: false
+})
 
 let loader = document.getElementById("center");
 window.addEventListener("load", function () {
   loader.style.display = "none";
 });
-var swiper = new Swiper(".aboutSwiper", {
-  zoom: true,
-  slidesPerView: 1,
-  spaceBetween: 30,
-  loop: true,
-  // effect:"fade",
-  simulateTouch: false,
-  autoplay: {
-    pauseOnMouseEnter: true,
-    delay: 1500,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    dynamicBullets: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-swiper.controller.control = this.TextSwiper;
-
 // -----------------------------------------reveal feature   ------------------------
 
 // function reveal() {

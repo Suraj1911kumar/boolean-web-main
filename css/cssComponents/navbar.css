@@ -1,3 +1,4 @@
+
 .navbar-ul {
     /* border: 1px solid gold; */
     padding-left: 18px;
@@ -5,33 +6,50 @@
     color: white !important;
 }
 
-
-.activeX span,
+/* .active span,
 .nav-link:hover span {
     padding-bottom: 10px;
-    padding-top: 10px;
     border-bottom: 1px solid #6d95fc !important;
-    border-top: 1px solid #6d95fc !important;
-    transition: all 0.5s ease-in;
-
+} */
+.activeX span{
+    color: #6d95fc !important;
+    position: relative;
+    text-decoration: none;
+}
+.activeX span::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    height: 3px;
+    width: 100% !important;
+    background: #6d95fc;
+    border-radius: 50px;
+    transition: all 0.3s ease;
 }
 
-.activeX span {
-    border-inline: 3px solid #000;
-    outline: 3px solid #6d95fc;
-    background-color: #6d95fc;
-    padding: 10px;
-    font-weight: 900;
-    border-radius: 10px;
-    color: black;
+
+.nav-link span {
+    color: #FFF;
+    /* font-size: 30px; */
+    position: relative;
+    text-decoration: none;
+}
+
+.nav-link span::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    height: 3px;
+    width: 0;
+    background: #6d95fc;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.nav-link span:hover::before {
+    width: 100% ;
 }
 
 .nb:hover {
     border: none !important;
-}
-
-.logo_img img {
-    animation: type 5s infinite steps(30);
-    white-space: nowrap;
-
 }
