@@ -12,13 +12,14 @@
     <meta name="language" content="English">
     <meta name="revisit-after" content="1 days">
     <meta name="author" content="booelan ai">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- meta descrption  -->
 
     <title>Boolean Ai - Complexity Simplyfy</title>
 
     <link rel="shortcut icon" href="./images/favicon_io/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/styleMedia.css">
+    <link rel="stylesheet" href="./css/styleMedia.css"> 
 
     <link rel="stylesheet" href="./css/cssComponents/allSame.css">
     <link rel="stylesheet" href="./css/cssComponents/loader.css">
@@ -44,7 +45,7 @@
     <div id="center">
         <div class="mainLoader">
 
-            <img src="./images/src/loader.svg" alt="">
+            <!-- <img src="./images/src/loader.svg" class="loader-img" alt=""> -->
 
             <div class="loaderh2">
                 <span>B</span>
@@ -65,13 +66,12 @@
 
     <div class="landing">
         <div class="main-container">
-            <nav class=" navbar navbar-fixed-top navbar-expand-lg navbar-dark " data>
-                <div class=" container-fluid">
-                    <a class="navbar-brand col-4 col-lg-3 col-md-6 col-sm-10 " href="./index.html">
-                        <div class="logo">
-                            <img src="./images/src/logo.png" alt="logo here" width="250" height="32"
-                                class="img-fluid logo_img">
-                        </div>
+
+            <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark  " data>
+                <div class="container-fluid">
+                    <a class="navbar-brand col-4 col-lg-3 col-md-6 col-sm-10" href="./index.html">
+                        <img src="./images/src/logo.png" alt="logo here" width="250" height="32"
+                            class="img-fluid logo_img">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -81,11 +81,10 @@
                     <div class="collapse navbar-collapse col-8 col-lg-9 col-md-6 col-sm-12" id="navbarSupportedContent">
                         <ul class="navbar-nav navbar-ul text-center  ms-auto mb-0  mb-lg-0">
                             <li class="nav-item ">
-                                <a class="nav-link activeX" aria-current="page"
-                                    href="./index.html"><span>Home</span></a>
+                                <a class="nav-link " aria-current="page" href="./index.html"><span>Home</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./newAbout.html"><span>About us</span></a>
+                                <a class="nav-link active" href="./newAbout.html"><span>About us</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./services.html"><span>Our Services</span></a>
@@ -97,42 +96,53 @@
                                 <a class="nav-link" href="./contact.html"><span>Contact Us</span></a>
                             </li>
                             <!-- <li class="nav-item">
-                                <a class="nav-link" href="#">
+                                <a class="nav-link nb" class="search-bar" href="#">
+                                    <form role="search" method="get" class="search-form " action="">
+                                        <label  class="fa-solid fa-magnifying-glass" style="color: #6d95fc;">
+                                            <input type="search" class="search-field fa-solid fa-magnifying-glass"
+                                                placeholder="Search …" value="" name="s" title="Search for:">
+                                            </input>
+                                            <button></button>
+                                        </label>
+                                        <input type="submit" class="search-submit" value="Search" />
 
-                                    <i class="fa-solid fa-magnifying-glass" style="color: #6d95fc;"></i>
+                                    </form>
                                 </a>
                             </li> -->
                         </ul>
-
                     </div>
                 </div>
             </nav>
         </div>
-        <div class="hero mb-5 ">
-            <div class="container d-flex align-item-start justify-content-center head-full">
-                <div class="row ">
+        <div class="main-conttainer">
+            <div class="hero mb-5 ">
+                <div class="container d-flex align-item-start justify-content-center head-full">
+                    <div class="row ">
 
-                    <div class="col-12 col-xxl-6  col-lg-7 col-md-8 col-sm-10 head-sd">
-                        <div class="welcome-to-boolean-ai-parent">
-                            <div class="welcome-to-boolean">Welcome to BOOLEAN AI</div>
-                            <b class="unleashing-the-power-container">
-                                <span>Unleashing the Power of </span>
-                                <span class="innovation">Innovation</span>
-                            </b>
-                            <div class="frame-child">
-                            </div>
-                            <div class="header-text-para">Experience cutting-edge innovation, and unlock the power of
-                                technology to solve complex business problems. Transform your business ideas into
-                                market-ready solutions. Boolean Artificial Intelligence has just the right tools for all
-                                your business needs.</div>
-                            <div class="get-in-touch-wrapper">
-                                <div class="get-in-touch">read more</div>
+                        <div class="col-12 col-xxl-6  col-lg-7 col-md-8 col-sm-10 head-sd">
+                            <div class="welcome-to-boolean-ai-parent">
+                                <div class="welcome-to-boolean">Welcome to BOOLEAN AI</div>
+                                <b class="unleashing-the-power-container">
+                                    <span>Unleashing the Power of </span>
+                                    <span class="innovation">Innovation</span>
+                                </b>
+                                <div class="frame-child">
+                                </div>
+                                <div class="header-text-para">Experience cutting-edge innovation, and unlock the power
+                                    of
+                                    technology to solve complex business problems. Transform your business ideas into
+                                    market-ready solutions. Boolean Artificial Intelligence has just the right tools for
+                                    all
+                                    your business needs.</div>
+                                <div class="get-in-touch-wrapper">
+                                    <div class="get-in-touch">read more</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-lg-5 col-md-4 col-sm-2
+                        <div class="col-12 col-lg-5 col-md-4 col-sm-2
                  d-flex align-item-center justify-content-center ">
-                        <img src="./images/src/gloab.png" class="gloab-icon " alt="">
+                            <img src="./images/src/gloab.png" class="gloab-icon " alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -286,7 +296,7 @@
                         </div>
 
 
-                        <div id="carosel-service" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div id="carosel-service" class="carousel slide" data-bs-ride="carousel">
 
                             <div class="carousel-inner p-5">
                                 <div class="carousel-item active">
@@ -336,7 +346,7 @@
 
 
 
-        <section class="insight container  ">
+        <section class="insight main-container  ">
 
             <div class="head-all">
                 <h1>Boolean<span style="color: #6D95FC;">Insight</span> </h1>
@@ -747,6 +757,36 @@
         <i class="fas fa-arrow-up"></i>
     </button>
 
+
+    <div class="showNav" id="showNav">
+        <div class="showbtnnav">
+            <button type="button" class="btn" onclick="closeSide()">Close <i class="fa-solid fa-xmark"></i></button>
+            <hr />
+            <a href="#" class="activeX">
+                <span>
+                <i class="fa-solid fa-house"></i><h2>Home</h2>
+                </span>
+            </a>
+            <a href="#">
+                <h2>About Us</h2>
+            </a>
+            <a href="#">
+                <h2>Services</h2>
+            </a>
+            <a href="#">
+                <h2>Products</h2>
+            </a>
+            <a href="#">
+                <h2>Contact us</h2>
+            </a>
+        </div>
+    </div>
+
+    <div id="floatSide">
+        <button type="button" onclick="openSide()" class="btn  ">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
 
 
 

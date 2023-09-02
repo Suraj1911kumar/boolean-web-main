@@ -69,10 +69,10 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     height: auto;
 
-    background: url("../images/src/mjk3.svg");
-    background-size: contain;
+    background: url("../images/src/products.svg");
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center; 
+    background-position: top; 
     z-index: -1;
 }
 

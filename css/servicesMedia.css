@@ -9,7 +9,7 @@
         background: url("../images/src/aboutImg/background.svg");
         background-size: 100% 100%;
         background-repeat: no-repeat;
-        background-position: top bottom;
+        background-position: top ;
         z-index: -1;
     }
 }
@@ -25,7 +25,7 @@
         background: url("../images/src/aboutImg/background.svg");
         background-size: 100% 100%;
         background-repeat: no-repeat;
-        background-position: top bottom;
+        background-position: top ;
         z-index: -1;
     }
 

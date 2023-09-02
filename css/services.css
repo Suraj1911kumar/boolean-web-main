@@ -32,9 +32,9 @@ a {
 
 .card {
     position: relative;
-    max-width: 300px;
+    max-width: 90%;
     /* height: 200px; */
-    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+    background: linear-gradient(-45deg, #5957cc 0%, #1b191a 100% );
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -105,7 +105,7 @@ a {
     background: url("../images/src/serviceBack.svg");
     background-size: contain;
     background-repeat: repeat-y;
-    background-position: center;
+    background-position: top;
     z-index: -1;
 }
 
@@ -188,79 +188,46 @@ a {
 }
 
 
-
-
-
-.box-container {
-    height: auto;
-    width: auto;
-    /* max-width: 280px ; */
-    /* border: 1px solid red; */
-    margin: auto;
-    background: transparent;
-    z-index: 5;
-}
-
-.box-full {
-    /* border: 1px solid green; */
-    padding: 5px !important;
-    overflow: hidden;
-    z-index: 5;
-
-}
-
-
-.box {
-    position: relative;
-    max-width: 280px !important;
-    max-height: 300px;
-    object-fit: cover;
-    padding: 0 !important;
-    margin: 0 !important;
-    overflow: hidden;
-    z-index: 5;
-    perspective: 1000px;
-}
-
-.flipBox {
-    position: relative;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-    height: 100%;
-}
-
-.box:hover .flipBox{
-    transform: rotateY(180deg);
-}
-
-
-.front,
-.back {
-    height: 100%;
-    position: absolute;
-    margin-block: auto;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-
-.back {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    transform: rotateY(180deg);
-}
-
-.card-body {
-    background-color: black !important;
-}
-
 .contain {
     display: none;
 }
 
+
+
+
+.box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid white; */
+    height: auto;
+    min-height: 500px;
+    width: 100%;
+    overflow: hidden;
+}
+.miniBox{
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.serviceText{
+    display: none;
+}
+.miniBox:hover{
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: black;
+    flex-direction: column;
+}
+.miniBox:hover .serviceText{
+    display: block;
+}
 /* -----------------footer------------- */
 
 

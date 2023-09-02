@@ -131,6 +131,8 @@
 .mainLoader img {
     height: 50%;
     width: 50%;
+    max-width: 500px;
+    max-height: 500px;
     transition: all 0.5 ease;
     animation: rotate 2s ease-in-out 0s infinite;
 }
