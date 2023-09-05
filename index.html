@@ -19,7 +19,7 @@
 
     <link rel="shortcut icon" href="./images/favicon_io/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/styleMedia.css"> 
+    <link rel="stylesheet" href="./css/styleMedia.css">
 
     <link rel="stylesheet" href="./css/cssComponents/allSame.css">
     <link rel="stylesheet" href="./css/cssComponents/loader.css">
@@ -44,9 +44,6 @@
     <!-- loader   -->
     <div id="center">
         <div class="mainLoader">
-
-            <!-- <img src="./images/src/loader.svg" class="loader-img" alt=""> -->
-
             <div class="loaderh2">
                 <span>B</span>
                 <span>o</span>
@@ -81,10 +78,10 @@
                     <div class="collapse navbar-collapse col-8 col-lg-9 col-md-6 col-sm-12" id="navbarSupportedContent">
                         <ul class="navbar-nav navbar-ul text-center  ms-auto mb-0  mb-lg-0">
                             <li class="nav-item ">
-                                <a class="nav-link " aria-current="page" href="./index.html"><span>Home</span></a>
+                                <a class="nav-link activeX" aria-current="page" href="./index.html"><span>Home</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="./newAbout.html"><span>About us</span></a>
+                                <a class="nav-link " href="./newAbout.html"><span>About us</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./services.html"><span>Our Services</span></a>
@@ -95,20 +92,6 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="./contact.html"><span>Contact Us</span></a>
                             </li>
-                            <!-- <li class="nav-item">
-                                <a class="nav-link nb" class="search-bar" href="#">
-                                    <form role="search" method="get" class="search-form " action="">
-                                        <label  class="fa-solid fa-magnifying-glass" style="color: #6d95fc;">
-                                            <input type="search" class="search-field fa-solid fa-magnifying-glass"
-                                                placeholder="Search …" value="" name="s" title="Search for:">
-                                            </input>
-                                            <button></button>
-                                        </label>
-                                        <input type="submit" class="search-submit" value="Search" />
-
-                                    </form>
-                                </a>
-                            </li> -->
                         </ul>
                     </div>
                 </div>
@@ -153,7 +136,7 @@
         <section class="about_us main-container">
             <div class="main">
                 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    <div class="carousel-inner">
+                    <div class="carousel-inner ">
                         <div class="carousel-item active main-container ">
                             <div class="innerCarousel">
                                 <div class="carouselImg ">
@@ -245,9 +228,7 @@
                             data-bs-slide-to="1" aria-label="Slide 2"></button>
                         <button type="button" data-bs-target="#carouselExampleFade" class="btn-indicator"
                             data-bs-slide-to="2" aria-label="Slide 3"></button>
-
-
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
                             data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
@@ -256,7 +237,7 @@
                             data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">nextious</span>
-                        </button>
+                        </button> -->
                     </div>
 
                 </div>
@@ -300,15 +281,16 @@
 
                             <div class="carousel-inner p-5">
                                 <div class="carousel-item active">
-                                    <div class="d-block w-90 p-5">
+                                    <div class="d-block ">
                                         <img src="./images/src/service1.svg" class="img-fluid  mx-auto  w-100"
-                                            alt="...">
+                                            alt="not found">
                                     </div>
 
                                 </div>
                                 <div class="carousel-item ">
-                                    <div class="d-block w-90 p-5"><img src="./images/src/service2.svg"
-                                            class="img-fluid w-100" alt="..."></div>
+                                    <div class="d-block ">
+                                        <img src="./images/src/service2.svg" class="img-fluid w-100" alt="not found">
+                                    </div>
 
                                 </div>
 
@@ -346,7 +328,7 @@
 
 
 
-        <section class="insight main-container  ">
+        <section class="insight main-container">
 
             <div class="head-all">
                 <h1>Boolean<span style="color: #6D95FC;">Insight</span> </h1>
@@ -698,8 +680,7 @@
             </div>
             <div class="footer-second   my-5 py-5">
                 <div class="container footer-bottom mx-auto text-center">
-                    <h1 class=""><span style="color: #6d95fc;">Boolean</span> ai <small><img src="./images/src/icon.png"
-                                alt="" class="small-img"></small></h1>
+                    <h1 class=""><span style="color: #6d95fc;">Boolean</span> ai </h1>
                     <p class="complexity">complexity simplify</p>
                     <div class="line2 mb-2"></div>
                     <ul class="list-inline footerlist">
@@ -741,13 +722,6 @@
 
 
 
-    <!-- 
-    <div id="cursor">
-    </div>
-    <div id="cursor2">
-    </div> -->
-
-
 
     <div class="progress-container">
         <div class="progress-bar" id="myBar"></div>
@@ -764,20 +738,33 @@
             <hr />
             <a href="#" class="activeX">
                 <span>
-                <i class="fa-solid fa-house"></i><h2>Home</h2>
+                    <i class="fa-solid fa-house"></i>
+                    <h2>Home</h2>
                 </span>
             </a>
             <a href="#">
-                <h2>About Us</h2>
+                <span>
+                    <i class="fa-solid fa-file"></i>
+                    <h2>About Us</h2>
+                </span>
             </a>
             <a href="#">
-                <h2>Services</h2>
+                <span>
+                    <i class="fa-solid fa-gear"></i>
+                    <h2>Services</h2>
+                </span>
             </a>
             <a href="#">
-                <h2>Products</h2>
+                <span>
+                    <i class="fa-solid fa-clipboard"></i>
+                    <h2>Products</h2>
+                </span>
             </a>
             <a href="#">
-                <h2>Contact us</h2>
+                <span>
+                    <i class="fa-solid fa-envelope"></i>
+                    <h2>Contact Us</h2>
+                </span>
             </a>
         </div>
     </div>

@@ -28,7 +28,7 @@
         height: 100vh;
         width: 100vw;
         background: url("../images/src/fullBackground.svg");
-        background-size: 100% 100%;
+        background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         display: flex;
@@ -260,17 +260,21 @@
         height: 30px;
     }
 }
-
+@media (max-width:376px) {
+    .welcome-to-boolean{
+        font-size: 10px;
+    }
+}
 
 @media (max-width:320px) {
     .logo_img {
         min-width: 100px !important;
     }
 
-    .welcome-to-boolean {
+    /* .welcome-to-boolean {
         font-size: 5vw;
         margin-inline: auto;
-    }
+    } */
 
     .unleashing-the-power-container {
         font-size: 10vw;
@@ -280,9 +284,6 @@
 
     .header-content {
         font-size: 10vw;
-        margin-inline: auto !important;
-        /* text-align: center; */
-        width: 100px;
     }
 
     .head-all {

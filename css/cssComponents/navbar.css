@@ -6,17 +6,14 @@
     color: white !important;
 }
 
-/* .active span,
-.nav-link:hover span {
-    padding-bottom: 10px;
-    border-bottom: 1px solid #6d95fc !important;
-} */
+
 .activeX span{
     color: #6d95fc !important;
     position: relative;
     text-decoration: none;
+    text-align: left;
 }
-.activeX h2{
+/* .activeX h2{
     color: white !important;
     position: relative;
     text-decoration: none;
@@ -29,7 +26,7 @@
     width: 100% !important;
     border-radius: 50px;
     transition: all 0.3s ease;
-}
+} */
 .activeX span::before {
     content: "";
     position: absolute;

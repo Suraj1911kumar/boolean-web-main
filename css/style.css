@@ -919,8 +919,7 @@ a {
 }
 
 .carousel-indicate {
-    margin-right: 55% !important;
-    margin-left: 5% !important
+    margin-right: 65% !important;
 }
 
 .btn-indicator {
@@ -954,8 +953,7 @@ a {
     }
 
     .carousel-indicate {
-        margin-inline: 15% !important;
-        margin-bottom: 70% !important
+        display: none !important;
     }
 }
 
@@ -1437,11 +1435,11 @@ form button {
     z-index: 100
 }
 
-.showNav { 
+.showNav {
     position: fixed;
     display: none;
-    width: 20%;
-    background: linear-gradient(175.64deg, rgba(17, 24, 42, .5), rgba(17, 24, 42, .7)) black;
+    width: 50%;
+    background: linear-gradient(175.64deg, rgba(17, 24, 42, .5), rgba(17, 24, 42, .7)) #6d95fc;
     top: 0;
     right: 0;
     border: 3px solid #000;
