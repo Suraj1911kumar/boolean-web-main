@@ -44,12 +44,15 @@ function mail() {
         })
 
         swalWithBootstrapButtons.fire({
+            imageUrl: './images/src/logo.png',
+            imageWidth: 100,
+            imageHeight: 50,
             title: 'Are you sure?',
-            text: "You won't be able to revert this!",
-            icon: 'warning',
+            text: "No messages!! want to send message",
+            icon: 'question',
             showCancelButton: true,
-            confirmButtonText: 'yes send it!!',
-            cancelButtonText: 'No, cancel!',
+            confirmButtonText: 'No, just send it!!',
+            cancelButtonText: 'Yes, cancel!',
             reverseButtons: true
         }).then((result) => {
             if (result.isConfirmed) {
@@ -78,7 +81,7 @@ function mail() {
                         hideClass: {
                             popup: 'animate__animated animate__fadeOutUp'
                         },
-                        text: 'Thanks for messaging us. we contact you as soon as possible....',
+                        text: 'Your information has been sent to us without message.',
 
                     })
                 ).then(document.getElementById("form").reset());

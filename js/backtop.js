@@ -9,7 +9,7 @@ window.onscroll = function () {
   scrollFunction();
   myFunction();
   sidebar();
-  showNav();
+  // showNav();
 };
 
 function scrollFunction() {

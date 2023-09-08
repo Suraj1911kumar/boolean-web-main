@@ -1,6 +1,6 @@
  @media (max-width:425px) {
     .back{
-        background-size: cover;
+        background-position: top;
     }
     .fpara{
         font-size: 12px;

@@ -13,20 +13,7 @@
     text-decoration: none;
     text-align: left;
 }
-/* .activeX h2{
-    color: white !important;
-    position: relative;
-    text-decoration: none;
-}
-.activeX h2::before {
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    height: 3px;
-    width: 100% !important;
-    border-radius: 50px;
-    transition: all 0.3s ease;
-} */
+
 .activeX span::before {
     content: "";
     position: absolute;
@@ -50,7 +37,18 @@
     content: "";
     position: absolute;
     bottom: -10px;
-    height: 3px;
+    height: 1px;
+    width: 0;
+    background: #6d95fc;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+.nav-link span::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 0px;
+    height: 1px;
     width: 0;
     background: #6d95fc;
     border-radius: 50px;
@@ -58,7 +56,10 @@
 }
 
 .nav-link span:hover::before {
-    width: 100% ;
+    width: 50% ;
+}
+.nav-link span:hover::after {
+    width: 50% ;
 }
 
 .nb:hover {
